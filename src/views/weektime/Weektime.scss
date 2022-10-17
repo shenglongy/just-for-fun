@@ -1,0 +1,101 @@
+.weektime {
+  border-width: 1px;
+  font-size: 12px;
+  width: 642px;
+  &__header {
+    display: flex;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 64px;
+  }
+  &__phase {
+    flex: 1 1 0%;
+    &-top {
+      display: flex;
+      border-bottom-width: 1px;
+    }
+    &-bottom {
+      display: flex;
+    }
+  }
+  &__range {
+    flex: 1 1 0%;
+    border-left-width: 1px;
+    text-align: center;
+    line-height: 24px;
+  }
+  &__hour {
+    flex: 1 1 0%;
+    height: 24px;
+    width: 24px;
+    border-left-width: 1px;
+    text-align: center;
+    line-height: 24px;
+  }
+  &__body {
+    display: flex;
+  }
+  &__week {
+    display: flex;
+    flex-direction: column;
+    width: 64px;
+  }
+  &__weekday {
+    height: 24px;
+    border-top-width: 1px;
+    text-align: center;
+    line-height: 24px;
+  }
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 0%;
+  }
+  &__time {
+    height: 24px;
+    width: 12px;
+    flex-wrap: wrap;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    background-color: rgb(249 250 251);
+    transition: all 0.2s ease;
+    &--selected {
+      background: #4ad7de;
+    }
+    &--active {
+      background: #ccfbf1;
+    }
+  }
+  &__footer {
+    border-top-width: 1px;
+    padding: 8px;
+  }
+  &__tip {
+    display: flex;
+    justify-content: center;
+    &-text {
+      padding-right: 8px;
+      color: rgb(107 114 128);
+    }
+    &-clear {
+      color: #4ad7de;
+    }
+  }
+  &__selected {
+    padding-top: 12px;
+    &-item {
+      display: flex;
+      padding-bottom: 8px;
+      &__label {
+        width: 50px;
+      }
+      &__value {
+        flex: 1 1 0%;
+      }
+    }
+  }
+}
